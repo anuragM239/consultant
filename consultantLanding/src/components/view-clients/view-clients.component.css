@@ -1,0 +1,54 @@
+/* Container to center content with a background image using img tag */
+.center-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height to center vertically */
+    overflow: hidden; /* Hide overflow of the background image */
+    padding: 20px; /* Padding around the content */
+}
+
+/* Background image styling */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the image covers the entire container */
+    z-index: -1; /* Place it behind the content */
+    opacity: 0.8; /* Slightly transparent to improve text readability */
+}
+
+/* Consultant grid container */
+.consultant-grid {
+    display: grid;
+    gap: 20px;
+    width: 100%; /* Make grid full width */
+    z-index: 1; /* Ensure content is above the background */
+}
+
+/* Row in the grid (each row contains 3 columns) */
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for rows */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility */
+    width: 100%; /* Stretch the row to full width */
+}
+
+/* Individual cell styling */
+.grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+<!-- use this for api call:
+<div *ngFor="let item of restData.dataFromApi">
+    <h2>Consultant ID: {{item.consultantId}}</h2>
+    <h2>Bio: {{item.profileInfo}}</h2>
+    <h2>Completed Projects: {{item.totalProjects}}</h2>
+</div> -->
+
+
+<div class="center-container">
+    <img src="images/train1.jpg" alt="Background Image" class="background-image">
+    
+    <div class="consultant-card">
+        <h2>Consultant Profile</h2>
+        <div class="card-content">
+        <p>User ID: {{ restData.dataFromApi.userId }}</p>
+        <p>Name: {{ restData.userData?.userName }}</p>
+        <p>ID: {{ restData.dataFromApi.consultantId }}</p>
+        <p>Bio: {{ restData.dataFromApi.profileInfo }}</p>
+        <p>Total Projects: {{ restData.dataFromApi.totalProjects }}</p>
+        </div>
+    </div>
+
+</div>
+
+
+
